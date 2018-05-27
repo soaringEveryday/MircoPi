@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/result/index",
+    "pages/phone/phone",
+    "pages/stores/index",
+    "pages/about/index",
+    "pages/me/me",
+    "pages/tickets/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF3D4E",
+    "navigationBarTitleText": "微排队",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "搞起",
+        "iconPath": "images/tab_start_normal.png",
+        "selectedIconPath": "images/tab_start_select.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/tab_me_normal.png",
+        "selectedIconPath": "images/tab_me_select.png"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#FF3D4E",
+    "backgroundColor": "white",
+    "borderStyle": "black"
+  }
+}

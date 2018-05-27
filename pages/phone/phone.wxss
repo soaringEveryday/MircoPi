@@ -1,0 +1,32 @@
+/* pages/phone/phone.wxss */
+.container-phone-top {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+.base-info-text {
+  font-size: 20pt;
+  align-self: flex-start;
+  color: #353535;
+  margin-top: 30rpx;
+}
+.container {
+    width: 100%;
+  }
+.input-wrap {
+  margin-top: 40rpx;
+}
+.button-next {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80rpx;
+}
+page{
+  background-color: #fff;
+}

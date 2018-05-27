@@ -1,0 +1,29 @@
+/* pages/result/index.wxss */
+.container-result {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+.pic {
+  clear: both;
+  width: 70pt;
+  height: 70pt;
+  margin-top: 100rpx;
+}
+.name {
+  font-size: 16pt;
+  color: #888888;
+  align-content: center;
+  margin-top: 20rpx;
+}
+.result {
+  font-size: 20pt;
+  color: #353535;
+  align-content: center;
+  margin-top: 30rpx;
+}

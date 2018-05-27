@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "完成",
+  "usingComponents": {
+    "wxc-button": "../../dist/packages/@minui/wxc-button/dist/index"
+  }
+}

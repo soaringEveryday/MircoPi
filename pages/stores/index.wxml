@@ -1,0 +1,24 @@
+<!--pages/stores/index.wxml-->
+<view class="container-stores">
+  <view class="search-wrap">
+    <wxc-search class="search" show-clear="true" radius="30" mode="normal" placeholder="请输入店名"></wxc-search>
+  </view>
+  <view class="stores-title">
+    <text class='stores-title-text'>附近5公里正在营业的店</text>
+  </view>
+  <block class='' wx:for="{{stores}}" wx:key="{{stores}}" wx:for-item="item" wx:for-index="idx">
+    <wxc-panel border="{{false}}" style="width:95%;margin-left:6pt;margin-right:6pt;">
+      <view class='list-container' bindtap='selectStore' data-index="{{item.id}}">
+        <image class='list-item-image' src='{{item.pic}}'></image>
+        <view class='list-item-info'>
+          <text class='list-item-info-name'>{{item.name}}</text>
+          <wxc-elip line="2" class='list-item-info-address'>{{item.address}}</wxc-elip>
+        </view>
+        <view class='icon-address' data-index="{{item.id}}" catchtap='clickShowMap'>
+          <wxc-icon size="30" type="address"></wxc-icon>
+        </view>
+      </view>
+    </wxc-panel>
+  </block>
+
+</view>

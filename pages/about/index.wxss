@@ -1,0 +1,27 @@
+/* pages/about/index.wxss */
+.container-about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+.logo {
+  clear: both;
+  margin-top: 100pt;
+  width: 80pt;
+  height: 80pt;
+}
+.about-text-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20pt;
+}
+.about-text {
+  font-size: 10pt;
+  color: #353535
+}

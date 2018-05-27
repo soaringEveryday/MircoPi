@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container-main">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="button-scan">
+    <wxc-button type="beauty" btnStyle="min-width: 264rpx;min-height: 264rpx;padding: 0;border-radius: 264rpx; display:flex; flex-direction: column; justify-content: center;align-items: center; background: #FF3D4E;padding-top: 40rpx" bindtap='gotoScan'
+    >
+      <wxc-icon color="#fff" size="144" type="scan"></wxc-icon>
+    </wxc-button>
+  </view>
+  <view class="button-action">
+    <wxc-button type="beauty" btnStyle="width: 300rpx;height: 300rpx;margin: 20rpx;background: #fff;border: none" bindtouchend='getTicket'>
+      <view class="action-text-group">
+        <text class='action-text'>取号</text>
+        <text class='action-text-sub'>(我是顾客)</text>
+      </view>
+    </wxc-button>
+    <wxc-button type="beauty" btnStyle="width: 300rpx;height: 300rpx;margin: 20rpx;background: #fff;border: none" bindtouchend='goGiven'>
+      <view class="action-text-group">
+        <text class='action-text'>发号</text>
+        <text class='action-text-sub'>(我是商家)</text>
+      </view>
+    </wxc-button>
+  </view>
+  <wxc-toast
+    is-show="{{$toast.show}}"
+    text="{{$toast.text}}">
+  </wxc-toast>
+</view>

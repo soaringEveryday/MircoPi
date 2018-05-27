@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "选择店铺",
+  "usingComponents": {
+    "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index",
+    "wxc-button": "../../dist/packages/@minui/wxc-button/dist/index",
+    "wxc-search": "../../dist/packages/@minui/wxc-search/dist/index",
+    "wxc-panel": "../../dist/packages/@minui/wxc-panel/dist/index",
+    "wxc-elip": "../../dist/packages/@minui/wxc-elip/dist/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

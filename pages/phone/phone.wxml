@@ -1,0 +1,16 @@
+<!--pages/phone/phone.wxml-->
+<view class='container-phone-top'>
+  <text class='base-info-text'>{{title}}</text>
+  <!-- <wxc-input type="number" placeholder="输入手机号"></wxc-input>
+  <wxc-input type="number" placeholder="输入人数"></wxc-input> -->
+
+  <view class="input-wrap">
+      <wxc-input type="number" title="手机号" placeholder="请输入手机号" bind:input="onNumberInput"></wxc-input>
+      <wxc-input wx:if="{{showPersonNumber}}" type="number" title="人数" placeholder="请输入多少人就餐" bind:input="onPersonsInput"></wxc-input>
+  </view>
+  <view class="button-next">
+    <wxc-button size="large" type="beauty" value="下一步" btnStyle="background: #FF3D4E" bindtouchend='selectStore'>
+    </wxc-button>
+  </view>
+</view>
+
